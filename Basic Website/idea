@@ -1,0 +1,11 @@
+.Investments:hover::before {
+    content: "yea";
+    display: inline;
+
+}
+
+
+.Information:hover ~ .Investments::before{
+    content: "Information";
+    color: red;
+}

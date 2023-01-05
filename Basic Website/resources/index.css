@@ -1,0 +1,80 @@
+img {
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.Investments {
+    font-family: Arial;
+    font-size: large;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+    color: black;
+    display: inline;
+    background-color: transparent;
+    border: 0;
+    border-style: none;
+}
+
+
+.Philosophy {
+    color: black;
+    position: fixed;
+    top: 35%;
+    left: 59%;
+    height: 180px;
+    width: 170px;
+    opacity: 1;
+}
+
+.Investments::before {
+    content: "Investments";
+    
+}
+
+
+.Information {
+    color: black;
+    position: fixed;
+    top: 17%;
+    left: 45%;
+    height: 100px;
+    width: 220px;
+    opacity: 1;
+}
+
+.Philosophy:hover ~ .Investments::before{
+    content: "Philosophy";
+    color: darkslateblue;
+}
+
+.Information:hover ~ .Investments::before{
+    content: "Information";
+    color: maroon;
+}
+
+footer {
+    position: fixed;
+    bottom: 1%;
+    right: 2%;
+    font-family:monospace ;
+    font-size: small;
+}
+
+.comma {
+    font-weight: bold;
+}
+
+.philo {
+    color: darkslateblue;
+}
+
+.info {
+    color: maroon;
+}
